@@ -26,9 +26,8 @@ body{
   font-size: 40px;
 }
 .dice{
-  width: 100px;
-  height: 100px;
-  background-color: #41ff61;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .myButton{
@@ -38,4 +37,7 @@ body{
 .icone{
   width: 24px;
   height: 24px;
+}
+.active{
+  background-color: #dde0d6;
 }
