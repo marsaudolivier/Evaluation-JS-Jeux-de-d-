@@ -13,39 +13,50 @@
     <header class="container-fluid text-center"><button class="btn-outline-success text-uppercase myButton m-3" id="newGame">
         <img src="atset/plus-circle.svg" class="icone"> New Game</button></header>
         <main class="container-fluid text-center">
-            <div class="row">
+            <div class="row mx-auto justify-content-center align-items-center">
                 <!--Place joueur 1-->
-              <div class="col-sm-6 mx-auto" id="playerOne">
+              <div class="col-sm-6 col-md-5 d-flex flex-column" id="playerOne">
+                <div class="espace1"></div>
                   <div class="m-3 text-uppercase text-danger">
                       <h2>player 1</h2> 
                       <span id="scorePlayer1" class="score">0</span>
+                  </div>
+                  <div class="espace2">
                   </div>
                   <div class="current p-2 text-uppercase justify-content-sm-center col-sm-6 mx-auto">
                     <p>Current</p>
                     <span id="currentPlayer1" class="current">0</span>
                   </div>
+                  <div class="espace1"></div>
               </div>
                <!--Place dé et bouton dice hold-->
-               <div class="col-sm-6 mx-auto dice m-3" id="dice">dé</div>
-               <div class="col-sm-6 mx-auto">
-                <button class="btn-outline-success myButton text-uppercase" id="rollDice"><img src="atset/arrow-repeat.svg" class="icone"> roll dice</button>
+               <div class="col-sm-6 col-md-2 d-flex flex-column align-items-center">
+                 <div class="espace1"></div>
+                 <div class="dice m-3 mx-auto" id="dice">dé</div>
+               <div>
+                <div class="espace3"></div>
+                <button class="btn-outline-success myButton text-uppercase test"  id="rollDice"><img src="atset/arrow-repeat.svg" class="icone"> roll dice</button>
                </div>
-               <div class="col-sm-6 mx-auto">
-                <button class="btn-outline-danger myButton m-2 text-uppercase" id="hold"><img src="atset/box-arrow-in-down.svg" class="icone"> hold</button>
+               <div>
+                <button class="btn-outline-danger myButton m-2 text-uppercase test" id="hold"><img src="atset/box-arrow-in-down.svg" class="icone"> hold</button>
                </div>
-               <div class="col-sm-6 mx-auto" id="playerTwo">
+               </div>
                 <!--Place joueur 2-->
-                <div class="m-3 text-uppercase text-danger">
-                    <h2>player 2</h2> 
-                    <span id="scorePlayer2" class="score">0</span>
-                </div>
-                <div class="current p-2 text-uppercase justify-content-sm-center col-sm-6 mx-auto">
-                  <p>Current</p>
-                  <span id="currentPlayer2" class="current">0</span>
-                </div>
-            </div>     
-            </div>
-            
+               <div class="col-sm-6 col-md-5 d-flex flex-column" id="playerTwo">
+                <div class="espace1"></div>
+                  <div class="m-3 text-uppercase text-danger">
+                      <h2>player 2</h2> 
+                      <span id="scorePlayer2" class="score">0</span>
+                  </div>
+                  <div class="espace2">
+                  </div>
+                  <div class="current p-2 text-uppercase justify-content-sm-center col-sm-6 mx-auto">
+                    <p>Current</p>
+                    <span id="currentPlayer2" class="current">0</span>
+                  </div>
+                  <div class="espace1"></div>
+              </div>
+            </div>       
         </main>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

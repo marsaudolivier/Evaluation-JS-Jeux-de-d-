@@ -42,7 +42,7 @@ function newGame() {
     current2.innerHTML = scorecurrent2;
     playerOne.classList.add("active");
     playerTwo.classList.remove("active");
-    playerGamer = 1
+    playerGamer = 1;
     canHold = false;
     buttonHold.disabled = true;
 }

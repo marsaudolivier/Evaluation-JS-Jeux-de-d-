@@ -7,7 +7,7 @@
 }
 
 body{
-  border: 10px solid red;
+  border: 10px solid rgba(129, 3, 3, 0.616);
   width: 100%;
   max-width: 100%;
   height: 100%;
@@ -16,6 +16,7 @@ body{
   position: fixed;
   background-color: #fffbfb;
 }
+
 .current{
   width: 250px;
   height: 120px;
@@ -41,3 +42,45 @@ body{
 .active{
   background-color: #dde0d6;
 }
+.espace1{
+  height: 100px;
+}
+.espace2{
+  height: 300px;
+}
+.espace3{
+  height: 230px;
+}
+@media (max-width: 960px) { 
+  .espace1,.espace2,.espace3{
+    height: 0;
+  }
+}
+
+@media (max-height: 855px) { 
+    *{
+      font-size: 16px;
+    }
+    .current{
+      width: 150px;
+      height: 90px;
+      font-size: 20px;
+    }
+    .score{
+      font-size: 24px;
+    }
+  }
+  @media (max-height: 760px) { 
+    *{
+      font-size: 14px;
+    }
+    .current{
+      width: 150px;
+      height: 90px;
+      font-size: 20px;
+    }
+    .score{
+      font-size: 24px;
+    }
+  }
+
