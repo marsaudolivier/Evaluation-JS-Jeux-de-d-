@@ -45,6 +45,7 @@ function newGame() {
     playerGamer = 1;
     canHold = false;
     buttonHold.disabled = true;
+    dice.innerHTML = `<img class="dice" src="atset/Two_red_dice_01.svg.png">`;
 }
 
 //fonction du bouton roll
