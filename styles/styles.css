@@ -1,3 +1,4 @@
+/*Police et fond size page */
 *{
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@
   font-size: 16px;
   font-family: 'Lato', sans-serif;
 }
-
+/*Mise en place bordure */
 body{
   border: 10px solid rgba(129, 3, 3, 0.616);
   width: 100%;
@@ -16,32 +17,37 @@ body{
   position: fixed;
   background-color: #fffbfb;
 }
-
+/*Carré rouge Current score */
 .current{
   width: 250px;
   height: 120px;
   background-color: #ff4141;
   font-size: 40px;
 }
+/*Taille police Score */
 .score{
   font-size: 40px;
 }
+/*Taille dé*/
 .dice{
   max-width: 100px;
   max-height: 100px;
 }
-
+/*Taille de mes bouton*/
 .myButton{
   width: 130px;
   height: 50px;
 }
+/*Taille icone de mes bouton*/
 .icone{
   width: 24px;
   height: 24px;
 }
+/*Couleur des joueurs actif*/
 .active{
   background-color: #dde0d6;
 }
+/*Espace pour taille Pc et +*/
 .espace1{
   height: 100px;
 }
@@ -56,7 +62,7 @@ body{
     height: 0;
   }
 }
-
+/*Media query pour taille XS*/
 @media (max-height: 855px) { 
     *{
       font-size: 16px;
