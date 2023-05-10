@@ -4,12 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jeu de dé</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    
+    <!--Bonton nouvelle partie-->
+    <header class="container-fluid text-center"><button class="btn-outline-success text-uppercase myButton m-3" id="newGame">
+        <img src="atset/plus-circle.svg" class="icone"> New Game</button></header>
+        <main class="container-fluid text-center">
+            <div class="row">
+                <!--Place joueur 1-->
+              <div class="col-sm-6 mx-auto">
+                  <div class="m-3 text-uppercase text-danger">
+                      <h2>player 1</h2> 
+                      <span id="scorePlayer1" class="score">0</span>
+                  </div>
+                  <div class="current p-2 text-uppercase justify-content-sm-center col-sm-6 mx-auto">
+                    <p>Current</p>
+                    <span id="currentPlayer1" class="current">0</span>
+                  </div>
+              </div>
+               <!--Place dé et bouton dice hold-->
+               <div class="col-sm-6 mx-auto dice m-3">dé</div>
+               <div class="col-sm-6 mx-auto">
+                <button class="btn-outline-success myButton text-uppercase" id="rollDice"><img src="atset/arrow-repeat.svg" class="icone"> roll dice</button>
+               </div>
+               <div class="col-sm-6 mx-auto">
+                <button class="btn-outline-danger myButton m-2 text-uppercase" id="hold"><img src="atset/box-arrow-in-down.svg" class="icone"> hold</button>
+               </div>
+               <div class="col-sm-6 mx-auto">
+                <!--Place joueur 2-->
+                <div class="m-3 text-uppercase text-danger">
+                    <h2>player 2</h2> 
+                    <span id="scorePlayer2" class="score">0</span>
+                </div>
+                <div class="current p-2 text-uppercase justify-content-sm-center col-sm-6 mx-auto">
+                  <p>Current</p>
+                  <span id="currentPlayer2" class="current">0</span>
+                </div>
+            </div>     
+            </div>
+            
+        </main>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
